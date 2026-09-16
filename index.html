@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness Workout Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Fitness Workout Tracker</h1>
+
+    <p class="subtitle">
+        Add and manage your daily workouts
+    </p>
+
+    <div class="form-section">
+
+        <input
+            type="text"
+            id="exerciseName"
+            placeholder="Exercise name"
+        >
+
+        <input
+            type="number"
+            id="sets"
+            placeholder="Sets"
+            min="1"
+        >
+
+        <input
+            type="number"
+            id="reps"
+            placeholder="Reps"
+            min="1"
+        >
+
+        <button id="addButton">
+            Add Workout
+        </button>
+
+    </div>
+
+
+    <div class="summary">
+
+        <div class="card">
+            <h3>Total Workouts</h3>
+            <p id="totalWorkouts">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <p id="completedWorkouts">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <p id="pendingWorkouts">0</p>
+        </div>
+
+    </div>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="workoutTableBody"></tbody>
+
+    </table>
+
+
+    <button id="clearButton" class="clear-button">
+        Clear All Workouts
+    </button>
+
+</div>
+
+
+<script src="workout.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
