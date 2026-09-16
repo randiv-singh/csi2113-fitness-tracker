@@ -1,6 +1,5 @@
 services:
   fitness-app:
-    build: .
     image: dev200311/csi2113-fitness-tracker:latest
     container_name: csi2113-fitness-tracker
 
